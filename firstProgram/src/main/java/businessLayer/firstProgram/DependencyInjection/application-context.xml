@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="student"
+          class="businessLayer.firstProgram.DependencyInjection.Student">
+
+        <property name="name" value="Bharath"/>
+        <property name="id" value="101"/>
+        <property name="address" value="hyd"/>
+        
+     <!--  <constructor-arg value="Bharath"/>
+           <constructor-arg value="101"/>
+           <constructor-arg value="hyd"/>
+      -->
+    </bean>
+
+    <bean id="university"
+          class="businessLayer.firstProgram.DependencyInjection.University">
+
+        <property name="universityName" value="GIST"/>
+        <property name="universityCode" value="001"/>
+        <property name="universityAddress" value="Nellore"/>
+        <property name="student" ref="student"/>
+        
+        <!--  <constructor-arg value="GIST"/>
+              <constructor-arg value="001"/>
+              <constructor-arg value="Nellore"/>
+              <constructor-arg ref="student"/>
+         -->
+
+    </bean>
+
+</beans>
