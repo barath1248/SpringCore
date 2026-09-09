@@ -22,6 +22,13 @@ public class Student {
 		return id;
 	}
 
+	public Student(String name, int id, String address) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.address = address;
+	}
+
 	public void setId(int id) {
 		this.id = id;
 	}

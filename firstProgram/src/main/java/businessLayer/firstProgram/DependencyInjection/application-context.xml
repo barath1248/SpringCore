@@ -34,5 +34,40 @@
          -->
 
     </bean>
+    
+    <bean id="NotificationService" class="businessLayer.firstProgram.DependencyInjection.NotificationService">
+      <property name="notificationTypeService">
+      <list>
+       <value>WhatsappLite</value>
+       <value>SMS</value>
+       <value>Email</value>
+      </list>
+      </property>
+      
+      <property name="serviceRegions">
+      <set>
+       <value>INDIA</value>
+       <value>UK</value>
+       <value>JAPAN</value>
+      </set>
+      </property>
+      
+      <property name="notificationProvider">
+      <map>
+       <entry key="WhatsApp" value="WhatsApp API"/>
+       <entry key="SMS" value="Twilio"/>
+       <entry key="Email" value="Email SMTP"/>
+      </map>
+      </property>
+      
+      <property name="basicConfProperties">
+      <props>
+       <prop key="whatspp">notification-enable=true</prop>
+       <prop key="sms">3</prop>
+       <prop key="Email">Draft</prop>
+       </props>
+      </property>
+      
+    </bean>
 
 </beans>

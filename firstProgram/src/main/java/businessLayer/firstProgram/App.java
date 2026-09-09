@@ -12,11 +12,7 @@ import businessLayer.firstProgram.DependencyInjection.University;
 public class App 
 {
 	public static void main(String[] args) {
-
-	    System.out.println("University class: " + University.class);
 	    
-	   
-
 	    ApplicationContext context =
 	        new ClassPathXmlApplicationContext(
 	            "businessLayer/firstProgram/DependencyInjection/application-context.xml"
