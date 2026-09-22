@@ -1,6 +1,6 @@
 package businessLayer.firstProgram.ReflectionAPI;
 
-import org.springframework.beans.factory.annotation.Required;
+//import org.springframework.beans.factory.annotation.Required;
 
 public class Student {
 	
@@ -20,7 +20,7 @@ public class Student {
 		this.stdAddress = stdAddress;
 	}
     
-	@Required
+//	@Required
 	public String getStdName() {
 		return stdName;
 	}

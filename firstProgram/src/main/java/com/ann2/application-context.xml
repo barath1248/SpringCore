@@ -17,7 +17,7 @@
 
     <bean id="Beds" class="com.ann2.Beds">
         <property name="Count" value="45"/>
-    </bean>
+    </bean>  
 
     <bean id="Hostel" class="com.ann2.Hostel"/>
 
